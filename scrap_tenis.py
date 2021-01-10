@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import urllib
 import json
 
+header = {
+    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0'
+}
 
 while(True):
     try:
@@ -14,8 +17,7 @@ while(True):
 
         siteSearch = "https://www.atptour.com/en/-/ajax/PredictiveContentSearch/GetPlayerResults/" + name
 
-        search = urllib.request.Request(siteSearch, None, {
-            'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0'})
+        search = urllib.request.Request(siteSearch, None, header)
 
         page = urlopen(search)
 
@@ -31,8 +33,7 @@ while(True):
         host = "https://www.atptour.com"
         url = host + hosp
 
-        req = urllib.request.Request(url, None, {
-            'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0'})
+        req = urllib.request.Request(url, None, header)
 
         page = urlopen(req)
         html = BeautifulSoup(page.read(), "html.parser")
