@@ -52,9 +52,10 @@ while(True):
         print("Nasc: ", contentYear[51:-47])
         print("Altura: ", contentHeight[1:-1])
         print("Peso: ", contentWeight[1:-1])
-        print("\n-----------")
     except:
         print("Nao encontrado!")
+        
+    print("\n-----------")
 
 """
 RANKING
