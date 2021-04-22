@@ -54,8 +54,7 @@ while(True):
         print("Peso: ", contentWeight[1:-1])
         print("\n-----------")
     except:
-        print("Nao encontraod")
-        exit()
+        print("Nao encontrado!")
 
 """
 RANKING
