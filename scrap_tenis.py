@@ -6,10 +6,11 @@ import json
 header = {
     'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0'
 }
+print('Digite "quit" para sair!')
+name = input('Nome: ')
 
-while(True):
+while(name != 'quit'):
     try:
-        name = input('Nome: ')
         name = name.replace(' ', '')
 
         # https://www.atptour.com/en/players/
@@ -56,6 +57,7 @@ while(True):
         print("Nao encontrado!")
         
     print("\n-----------")
+    name = input('Nome: ')
 
 """
 RANKING
