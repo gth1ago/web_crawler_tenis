@@ -2,8 +2,18 @@
 
 Web crawler de jogadores de Tenis, trazendo informações sobre o mesmo quando pesquisado pelo nome;
 
-Sendo por enquanto: Ranking Mundial, Altura, Nascimento e Peso
+### Possui:
+*  Ranking Mundial
+*  Altura
+*  Nascimento
+*  Peso
 
+### Requisitos:
+*  python3
+*  beautifulsoup4
 
-Necessita:
-pip3 install beautifulsoup4
+### Para instalar o beautifulsoup4 com pip3:
+    $ pip3 install beautifulsoup4
+
+### Após estes basta executar
+    $ python3 scrap_tenis.py
